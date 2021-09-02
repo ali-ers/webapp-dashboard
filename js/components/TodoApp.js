@@ -15,6 +15,7 @@ import AddTodoMutation from '../mutations/AddTodoMutation';
 import TodoList from './TodoList';
 import TodoListFooter from './TodoListFooter';
 import TodoTextInput from './TodoTextInput';
+import Demo from './demo';
 
 import React from 'react';
 import {createFragmentContainer, graphql} from 'react-relay';
@@ -50,7 +51,7 @@ const TodoApp = ({relay, user}: Props) => {
         <TodoList user={user} />
         {hasTodos && <TodoListFooter user={user} />}
       </section>
-
+      <Demo />
       <footer className="info">
         <p>Double-click to edit a todo</p>
 
