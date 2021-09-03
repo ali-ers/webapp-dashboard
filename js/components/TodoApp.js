@@ -16,11 +16,14 @@ import TodoList from './TodoList';
 import TodoListFooter from './TodoListFooter';
 import TodoTextInput from './TodoTextInput';
 import Demo from './demo';
+import GoogleChart from './GoogleChart';
+import Indicator from './indicator';
 
 import React from 'react';
 import {createFragmentContainer, graphql} from 'react-relay';
 import type {RelayProp} from 'react-relay';
 import type {TodoApp_user} from 'relay/TodoApp_user.graphql';
+import { SelectionState } from '@devexpress/dx-react-chart';
 
 type Props = {|
   +relay: RelayProp,
@@ -38,8 +41,11 @@ const TodoApp = ({relay, user}: Props) => {
   return (
     <div>
       <section className="todoapp">
+        <Indicator />
+        <Demo />
+        <GoogleChart />
         <header className="header">
-          <h1>todos</h1>
+          <h1>EFT</h1>
 
           <TodoTextInput
             className="new-todo"
@@ -51,7 +57,6 @@ const TodoApp = ({relay, user}: Props) => {
         <TodoList user={user} />
         {hasTodos && <TodoListFooter user={user} />}
       </section>
-      <Demo />
       <footer className="info">
         <p>Double-click to edit a todo</p>
 

@@ -1,42 +1,14 @@
 {
   "relay": {
-    "name": "Relay",
-    "description": "A JavaScript framework for building data-driven React applications",
-    "homepage": "facebook.github.io/relay/",
+    "name": "ETF",
+    "description": "An exchange-traded fund (ETF) is a type of investment fund and exchange-traded product, i.e. they are traded on stock exchanges.",
+    "homepage": "http://en.wikipedia.org/wiki/Exchange-traded_fund",
     "examples": [
       {
-        "name": "Relay + express-graphql Example",
+        "name": "ETFs 101",
         "url": "",
-        "source_url": "https://github.com/relayjs/relay-examples/tree/main/todo",
+        "source_url": "https://www.fidelity.com/learning-center/investment-products/etf/what-are-etfs",
         "type": "backend"
-      }
-    ],
-    "link_groups": [
-      {
-        "heading": "Official Resources",
-        "links": [
-          {
-            "name": "Documentation",
-            "url": "https://facebook.github.io/relay/docs/quick-start-guide.html"
-          },
-          {
-            "name": "GraphQL in Relay",
-            "url": "https://facebook.github.io/relay/docs/en/graphql-in-relay.html"
-          },
-          {
-            "name": "Relay on GitHub",
-            "url": "https://github.com/facebook/relay"
-          }
-        ]
-      },
-      {
-        "heading": "Community",
-        "links": [
-          {
-            "name": "Relay on StackOverflow",
-            "url": "https://stackoverflow.com/questions/tagged/relayjs"
-          }
-        ]
       }
     ]
   },
