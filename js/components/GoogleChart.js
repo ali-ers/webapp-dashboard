@@ -36,25 +36,6 @@ export default class GoogleChart extends React.PureComponent {
     };
   }
 
-  useEffect(() => {
-    fetch("https://api.earningscalendar.net/earnings?from_date="+state.start+"&to_date="+state.end+"&api_key=B7YQ0f-TU-JaO0GR9ayeFA").then(res => res.json())
-    .then(
-        (result) => {
-          const groupByDate = _.groupBy(result, 'date')
-          //console.log(groupByDate)
-          const countByDate = _.countBy(result, 'date')
-          const resultByDateArray = Object.keys(countByDate).map(k => ({ date: k, count: countByDate[k] }));
-          //props.handler(resultByDateArray[0]['count'])
-          //console.log(resultByDateArray)
-
-          //setItemSelected(result);
-          setState({
-            ...state,
-            dataCount: resultByDateArray,
-            data: groupByDate
-          })
-
-        })}, [])
         
   render() {
     const { data: chartData } = this.state;
